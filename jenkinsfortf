@@ -9,7 +9,7 @@ pipeline {
         }
         stage('plan') { 
             steps {
-                echo 'running the script now'
+                echo 'running the script now.'
                 sh 'terraform plan'
             }
         }
