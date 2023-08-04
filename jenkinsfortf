@@ -1,10 +1,16 @@
 pipeline {
     agent any 
       stages {
-        stage('Test') { 
+        stage('init') { 
             steps {
                 echo 'running the script now'
                 sh 'terraform init'
+            }
+        }
+        stage('plan') { 
+            steps {
+                echo 'running the script now'
+                sh 'terraform plan'
             }
         }
       }
