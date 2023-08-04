@@ -1,0 +1,9 @@
+pipeline {
+    agent any 
+        stage('Test') { 
+            steps {
+                echo 'running the script now'
+                sh 'terraform init'
+            }
+        }
+        }
